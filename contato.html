@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Instituto Raros do Norte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+        .btn-whatsapp {
+            color: #551a8b;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            color: #25d366;
+        }
+        .btn-whatsapp:active {
+            color: #128c7e;
+        }
+
+        /* Ajustes responsivos para os cartões de contato */
+        .info-grid {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        .info-card {
+            box-sizing: border-box;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .info-card h3 {
+            white-space: normal !important;
+            overflow-wrap: anywhere;
+        }
+
+        .info-card p,
+        .info-card a {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        @media (max-width: 700px) {
+            .info-grid {
+                flex-direction: column !important;
+                gap: 14px !important;
+                width: 100% !important;
+            }
+
+            .info-card {
+                flex: 1 1 auto !important;
+                width: 100% !important;
+                min-width: 0 !important;
+            }
+
+            .info-card h3 {
+                white-space: normal !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="IMAGENS/teste.jpg" alt="Logotipo do Instituto Raros do Norte" class="logo">
+            <span class="brand-title">Instituto Raros do Norte</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início (Bio)</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="projetos.html">Projetos e Ações</a></li>
+                <li><a href="doacao.html">Faça uma Doação</a></li>
+                <li><a href="contato.html" class="active">Fale Conosco</a></li>
+                <li><a href="localizacao.html">Onde Estamos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <section class="card-page">
+<div style="text-align: center; margin-bottom: 25px;">
+  <img src="IMAGENS/IMAGEMCONTATO.jpg" alt="Foto do Instituto" style="max-width: 100%; height: auto; border-radius: 8px;">
+</div>
+            <h2><i class="fa-solid fa-comments icon-blue"></i> Fale Conosco</h2>
+            <p class="description">Entre em contato conosco através dos nossos canais oficiais.</p>
+        
+   <div class="info-grid" style="display: flex !important; flex-direction: row !important; gap: 20px !important; width: 100% !important;">
+    <div class="info-card" style="flex: 1 1 0;">
+        <i class="fa-brands fa-whatsapp icon-blue"></i>
+        <h3 style="white-space: nowrap;">WhatsApp Diretoria</h3>
+        <p> (91)98754-8989 </p>
+        <p><a href="https://wa.me/5591987548989" target="_blank" class="btn-whatsapp">Enviar Mensagem</a></p>
+    </div>
+
+    <div class="info-card" style="flex: 1 1 0;">
+        <i class="fa-brands fa-whatsapp icon-blue"></i>
+        <h3 style="white-space: nowrap;">WhatsApp Serviço Social</h3>
+        <p> (91)9176-2212 </p>
+        <p><a href="https://wa.me/559191762212" target="_blank" class="btn-whatsapp">Enviar Mensagem</a></p>
+    </div>
+
+    <div class="info-card" style="flex: 1 1 0;">
+        <i class="fa-solid fa-envelope icon-blue"></i>
+        <h3 style="white-space: nowrap;">E-mail</h3>
+        <p>institutorarosdonorte@gmail.com</p>
+   <p><a href="mailto:institutorarosdonorte@gmail.com" class="link-btn" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color=''">Enviar E-mail</a></p>
+    </div>
+</div>
+        </section>  
+    </main> 
+
+    <footer>
+        <p>Juntos por uma sociedade mais inclusiva!</p>
+    </footer>
+</body>
+</html>
